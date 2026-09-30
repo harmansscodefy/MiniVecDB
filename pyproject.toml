@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minivectordb"
+version = "0.1.0"
+description = "A lightweight vector database built from scratch in Python."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.24.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.22.0",
+    "pydantic>=2.0.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
